@@ -63,30 +63,40 @@ namespace EntryPoint
         private static void BankInterest()
         {
             Console.WriteLine("Welcome to the bank of the people.\n" +
-                "The only bank of the people, from the people and for the people.");
+                "The only bank of the people, from the people and for the people." +
+                "\n\n");
 
             StandardInterestRate rate = StandardInterestRate.GetInstance();
+            StandardInterestRate newRate = StandardInterestRate.GetInstance();
 
             // StandardInterestRate invalidRate = new StandardInterestRate(); // Constructor doesn't work
+            Random r = new();
 
             while (true)
             {
-                rate.CurrentInterestRate += 1;
+                rate.UpdateInterestRate(5);
+                Console.WriteLine(newRate);
 
-                StandardInterestRate newRate = StandardInterestRate.GetInstance();
-                Console.WriteLine(newRate.CurrentInterestRate);
+                rate.UpdateInterestRate(3);
+                Console.WriteLine(rate);
 
-                rate.CurrentInterestRate += 1;
-                Console.WriteLine(rate.CurrentInterestRate);
+                newRate.UpdateInterestRate(7);
+                Console.WriteLine(rate);
 
-                newRate.CurrentInterestRate += 1;
+                rate.UpdateInterestRate(r.Next(0,100));
+                Console.WriteLine(newRate);
 
-                Console.WriteLine(rate.CurrentInterestRate);
+                Console.WriteLine();
 
                 if (Quit()) break;
             }
-            Console.WriteLine(rate.CurrentInterestRate);
-            
+            Console.WriteLine(rate);
+
+            Console.WriteLine("\n\n" +
+                $"{rate} \n" +
+                "This interest rates have provoked an economic crash.\n" +
+                "The Bank of the people has gone bankrupt.");
+
         }
         public static void Main(string[] args)
         {
