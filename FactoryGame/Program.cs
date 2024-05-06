@@ -1,6 +1,5 @@
-﻿using ItemFactory;
+﻿using ItemFactoryLibrary;
 
-Console.WriteLine("Hello, World!");
 
 ItemCreator itemCreator = new RandomItemCreator();
 

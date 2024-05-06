@@ -1,14 +1,15 @@
-﻿using System;
+﻿using ItemFactoryLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ItemFactory
+namespace ItemFactoryLibrary.Items
 {
     public class Hammer : Item
     {
-        public Hammer() 
+        public Hammer()
         {
             Name = "Thunder Hammer";
             Id = 11;

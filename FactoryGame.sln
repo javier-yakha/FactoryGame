@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryGame", "FactoryGame\FactoryGame.csproj", "{6C82B9B5-4C3F-4F66-95DE-DCD41B6204BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemFactory", "ItemFactory\ItemFactory.csproj", "{24786251-BEBD-4685-A0FE-D700203B1280}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemFactoryLibrary", "ItemFactory\ItemFactoryLibrary.csproj", "{24786251-BEBD-4685-A0FE-D700203B1280}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

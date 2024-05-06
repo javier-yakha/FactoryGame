@@ -1,4 +1,4 @@
-﻿namespace ItemFactory
+﻿namespace ItemFactoryLibrary
 {
     public abstract class Item
     {
