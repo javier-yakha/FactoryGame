@@ -12,9 +12,15 @@ namespace ItemFactoryLibrary
         protected override Item ItemFactory()
         {
             Random r = new Random();
-            int randomSeed = r.Next(10);
+            int randomSeed = r.Next(1,4);
 
-            return randomSeed > 5 ? new Hammer() : new Shield();
+            return randomSeed switch
+            {
+                1 => new Hammer(),
+                2 => new Shield(),
+                3 => new Armor(),
+                _ => throw new InvalidOperationException(),
+            };
 
         }
     }
