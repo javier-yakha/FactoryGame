@@ -13,7 +13,9 @@ namespace ItemFactoryLibrary.Items
         {
             Name = "Helmet of the Ancients";
             Id = 14;
-            DefenseValue = 11;
+
+            Random r = new();
+            DefenseValue = r.Next(1, 12);
             Console.WriteLine("The Helmet of the Ancients has been created.");
         }
         public override void useItem()

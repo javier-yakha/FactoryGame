@@ -14,7 +14,10 @@ namespace ItemFactoryLibrary.Items
         {
             Name = "Thunder Hammer";
             Id = 11;
-            AttackValue = 49;
+
+            Random r = new();
+            AttackValue = r.Next(1, 50);
+
             Console.WriteLine("The Thunder Hammer has been created.");
         }
         public override void useItem()

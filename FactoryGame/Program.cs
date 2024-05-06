@@ -5,6 +5,7 @@ using Microsoft.VisualBasic;
 Console.WriteLine("Welcome Adventurer!\n" +
     "Fate is by your side.\n" +
     "The gods have granted you a mighty piece of equipment to embark your journey.");
+
 while (true)
 {
     Console.WriteLine();

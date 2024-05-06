@@ -15,7 +15,8 @@ namespace ItemFactoryLibrary.Items
         {
             Name = "Blessed Shield";
             Id = 12;
-            DefenseValue = 39;
+            Random r = new();
+            DefenseValue = r.Next(1,40);
             Console.WriteLine("The Blessed Shield has been created.");
         }
         public override void useItem()

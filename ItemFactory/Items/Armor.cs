@@ -13,7 +13,9 @@ namespace ItemFactoryLibrary.Items
         {
             Name = "Dragon Scale Mail";
             Id = 13;
-            DefenseValue = 15;
+            Random r = new();
+            
+            DefenseValue = r.Next(1, 16);
             Console.WriteLine("The Dragon Scale Mail has been created.");
         }
         public override void useItem()
