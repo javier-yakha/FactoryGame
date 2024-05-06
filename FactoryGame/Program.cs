@@ -34,7 +34,7 @@ namespace Game
 
                 Console.WriteLine(characterEquipment);
 
-                characterEquipment.CharacterShield.Block();
+                characterEquipment.Fight();
 
                 Console.WriteLine();
 

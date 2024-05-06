@@ -13,5 +13,9 @@ namespace CharacterGeneratorLibrary.DragonSet
         {
             return new DragonShield();
         }
+        public override Hammer CreateHammer()
+        {
+            return new DragonHammer();
+        }
     }
 }

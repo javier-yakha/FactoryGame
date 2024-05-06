@@ -12,6 +12,7 @@ namespace CharacterGeneratorLibrary
     public class CharacterEquipment
     {
         public Shield CharacterShield { get; set; }
+        public Hammer CharacterHammer { get; set; }
         public EquipmentSetGenerator UsedItemGenerator { get; set; }
         public CharacterEquipment() 
         {
@@ -29,12 +30,21 @@ namespace CharacterGeneratorLibrary
         private void CreateItems()
         {
             CharacterShield = UsedItemGenerator.CreateShield();
+            CharacterHammer = UsedItemGenerator.CreateHammer();
         }
-
+        public void Fight()
+        {
+            CharacterShield.UseItem();
+            CharacterHammer.UseItem();
+        }
         public override string ToString()
         {
-            return $"\tYou are wearing\n\n" +
-                $"Shield: {CharacterShield}";
+            return $"\tYou are wearing" +
+                $"\n\n" +
+                $"Shield: {CharacterShield}" +
+                $"\n\n" +
+                $"Hammer: {CharacterHammer}" +
+                $"\n\n";
         }
     }
 }

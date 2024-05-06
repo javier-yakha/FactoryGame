@@ -13,5 +13,9 @@ namespace CharacterGeneratorLibrary.AncientSet
         {
             return new AncientShield();
         }
+        public override Hammer CreateHammer()
+        {
+            return new AncientHammer();
+        }
     }
 }

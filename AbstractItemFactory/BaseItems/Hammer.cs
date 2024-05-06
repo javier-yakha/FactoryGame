@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace CharacterGeneratorLibrary.BaseItems
 {
-    public abstract class Shield
+    public abstract class Hammer
     {
         public string Name { get; set; }
         public int Id { get; set; }
-        public int DefenseValue { get; set; }
-        public int BlockValue { get; set; }
-        public abstract void Block();
+        public int AttackValue { get; set; }
         public abstract void UseItem();
+        public abstract void Strike();
     }
 }
