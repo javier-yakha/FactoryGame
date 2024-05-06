@@ -13,7 +13,7 @@ namespace ItemFactoryLibrary
         {
             Item item = ItemFactory();
 
-            item.useItem();
+            item.UseItem();
 
             return item;
         }

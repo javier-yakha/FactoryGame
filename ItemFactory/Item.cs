@@ -4,6 +4,6 @@
     {
         public string Name { get; set; }
         public int Id { get; set; }
-        public abstract void useItem();
+        public abstract void UseItem();
     }
 }

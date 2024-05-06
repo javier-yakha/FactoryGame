@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryGame", "FactoryGame\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemFactoryLibrary", "ItemFactory\ItemFactoryLibrary.csproj", "{24786251-BEBD-4685-A0FE-D700203B1280}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterGeneratorLibrary", "AbstractItemFactory\CharacterGeneratorLibrary.csproj", "{2B335A9E-6B0E-499A-8A29-E821A9B1B09F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{24786251-BEBD-4685-A0FE-D700203B1280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24786251-BEBD-4685-A0FE-D700203B1280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24786251-BEBD-4685-A0FE-D700203B1280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B335A9E-6B0E-499A-8A29-E821A9B1B09F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B335A9E-6B0E-499A-8A29-E821A9B1B09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B335A9E-6B0E-499A-8A29-E821A9B1B09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B335A9E-6B0E-499A-8A29-E821A9B1B09F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,7 +18,7 @@ namespace ItemFactoryLibrary.Items
             DefenseValue = r.Next(1, 16);
             Console.WriteLine("The <Dragon Scale Mail> has been created.");
         }
-        public override void useItem()
+        public override void UseItem()
         {
             Console.WriteLine($"A breeze of fire emanates from your armor, you feel <{DefenseValue} HP> revitalizing you.");
         }

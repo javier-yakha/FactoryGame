@@ -19,7 +19,7 @@ namespace ItemFactoryLibrary.Items
             DefenseValue = r.Next(1,40);
             Console.WriteLine("The <Blessed Shield> has been created.");
         }
-        public override void useItem()
+        public override void UseItem()
         {
             Console.WriteLine($"You have received a <{DefenseValue} HP> blessing from the gods protecting you from any harm.");
         }

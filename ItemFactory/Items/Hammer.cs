@@ -20,7 +20,7 @@ namespace ItemFactoryLibrary.Items
 
             Console.WriteLine("The <Thunder Hammer> has been created.");
         }
-        public override void useItem()
+        public override void UseItem()
         {
             Console.WriteLine($"You strike the ground with great force and a lighting strikes <{AttackValue} HP> to the enemy in front of you.");
         }

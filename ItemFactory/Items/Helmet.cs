@@ -18,7 +18,7 @@ namespace ItemFactoryLibrary.Items
             DefenseValue = r.Next(1, 12);
             Console.WriteLine("The <Helmet of the Ancients> has been created.");
         }
-        public override void useItem()
+        public override void UseItem()
         {
             Console.WriteLine($"As you wear the Helmet, the enormous Ruby starts glowing protecting you for <{DefenseValue} HP>.");
         }
