@@ -17,11 +17,11 @@ namespace ItemFactoryLibrary.Items
             Id = 12;
             Random r = new();
             DefenseValue = r.Next(1,40);
-            Console.WriteLine("The Blessed Shield has been created.");
+            Console.WriteLine("The <Blessed Shield> has been created.");
         }
         public override void useItem()
         {
-            Console.WriteLine($"You have received a {DefenseValue} points blessing from the gods protecting you from any harm.");
+            Console.WriteLine($"You have received a <{DefenseValue} HP> blessing from the gods protecting you from any harm.");
         }
     }
 }
