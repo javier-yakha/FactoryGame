@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using ItemFactory;
+
 Console.WriteLine("Hello, World!");
+
+ItemCreator itemCreator = new RandomItemCreator();
+
+Item item = itemCreator.CreateItem();
