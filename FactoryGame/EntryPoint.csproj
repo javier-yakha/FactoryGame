@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AbstractItemFactory\CharacterGeneratorLibrary.csproj" />
     <ProjectReference Include="..\ItemFactory\ItemFactoryLibrary.csproj" />
+    <ProjectReference Include="..\SingletonInterestLibrary\SingletonInterestLibrary.csproj" />
   </ItemGroup>
 
 </Project>

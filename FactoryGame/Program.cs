@@ -2,22 +2,16 @@
 using CharacterGeneratorLibrary.DragonSet;
 using ItemFactoryLibrary;
 using Microsoft.VisualBasic;
+using SingletonInterestLibrary;
 
-namespace Game
+namespace EntryPoint
 {
     public class Program()
     {
         private static bool Quit()
         {
-            Console.Write("You can (Q)uit any time pressing the key 'Q'");
-            var input = Console.ReadLine();
-
-            if (input is not null)
-            {
-                string answer = Convert.ToString(input);
-                return answer.Equals("q", StringComparison.CurrentCultureIgnoreCase);
-            }
-            return false;
+            Console.WriteLine("You can (Q)uit any time pressing the key 'Q'");
+            return Console.ReadKey().Key is ConsoleKey.Q;
         }
         private static void AbstractFactory()
         {
@@ -40,6 +34,9 @@ namespace Game
 
                 if (Quit()) break;
             }
+            Console.WriteLine("\n\n" +
+                "You are now fully equipped\n" +
+                "The mighty adventure will wait for you.");
         }
         private static void FactoryMethod()
         {
@@ -59,17 +56,48 @@ namespace Game
 
                 if (Quit()) break;
             }
-            
-
+            Console.WriteLine("\n\n" +
+                "You have received a mighty piece\n" +
+                "The glorious adventure will wait for you.");
         }
-        public static void Main(string[] args) 
+        private static void BankInterest()
         {
-            FactoryMethod();
+            Console.WriteLine("Welcome to the bank of the people.\n" +
+                "The only bank of the people, from the people and for the people.");
+
+            StandardInterestRate rate = StandardInterestRate.GetInstance();
+
+            // StandardInterestRate invalidRate = new StandardInterestRate(); // Constructor doesn't work
+
+            while (true)
+            {
+                rate.CurrentInterestRate += 1;
+
+                StandardInterestRate newRate = StandardInterestRate.GetInstance();
+                Console.WriteLine(newRate.CurrentInterestRate);
+
+                rate.CurrentInterestRate += 1;
+                Console.WriteLine(rate.CurrentInterestRate);
+
+                newRate.CurrentInterestRate += 1;
+
+                Console.WriteLine(rate.CurrentInterestRate);
+
+                if (Quit()) break;
+            }
+            Console.WriteLine(rate.CurrentInterestRate);
+            
+        }
+        public static void Main(string[] args)
+        {
+            //FactoryMethod();
 
             //AbstractFactory();
 
-            Console.WriteLine("The mighty adventure will wait for you.");
-            Console.ReadKey();
+            BankInterest();
+
+            Console.WriteLine("\n\n" +
+                "\t---\tProgram End\t---");
         }
     }
 }
