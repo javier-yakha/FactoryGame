@@ -22,8 +22,8 @@ namespace CharacterGeneratorLibrary.AncientSet
         }
         public override void Strike()
         {
-            Console.WriteLine($"The {Name} summons a leeching spirit" +
-                $"making your enemy lose <{AttackValue + 5} HP> " +
+            Console.WriteLine($"The {Name} summons a leeching spirit " +
+                $"making your enemy lose <{AttackValue + 15} HP> " +
                 $"while draining you <{AttackValue / 2} HP>");   
         }
         public override string ToString()

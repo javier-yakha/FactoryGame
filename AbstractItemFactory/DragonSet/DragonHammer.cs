@@ -23,9 +23,9 @@ namespace CharacterGeneratorLibrary.DragonSet
         public override void Strike()
         {
             Console.WriteLine($"A fierceful fire emanates " +
-                $"when you strike the {Name}" +
-                $"onto your enemy dealing <{AttackValue} HP>" +
-                $" and burning him for <{AttackValue - 10} HP>");
+                $"when you strike the {Name} " +
+                $"onto your enemy dealing <{AttackValue} HP> " +
+                $"and burning him for <{AttackValue - 15} HP>");
         }
         public override string ToString()
         {

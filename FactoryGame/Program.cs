@@ -50,6 +50,7 @@ namespace Game
             while (true)
             {
                 Console.WriteLine();
+
                 ItemCreator itemCreator = new RandomItemCreator();
 
                 Item item = itemCreator.CreateItem();
@@ -63,9 +64,9 @@ namespace Game
         }
         public static void Main(string[] args) 
         {
-            // FactoryMethod();
+            FactoryMethod();
 
-            AbstractFactory();
+            //AbstractFactory();
 
             Console.WriteLine("The mighty adventure will wait for you.");
             Console.ReadKey();
