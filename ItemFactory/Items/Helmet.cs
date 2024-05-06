@@ -18,7 +18,7 @@ namespace ItemFactoryLibrary.Items
         }
         public override void useItem()
         {
-            Console.WriteLine($"As you wear the Helmet, the enormous Ruby starts glowing protecting you for {DefenseValue}");
+            Console.WriteLine($"As you wear the Helmet, the enormous Ruby starts glowing protecting you for {DefenseValue} points.");
         }
 
     }
